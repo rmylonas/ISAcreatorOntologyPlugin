@@ -1,4 +1,4 @@
-package org.isatools.novartismetastore.resource;
+package it.fmach.femmetastore.resource;
 
 /**
  * Created by the ISA team

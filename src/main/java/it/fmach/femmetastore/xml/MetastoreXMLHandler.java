@@ -1,9 +1,9 @@
-package org.isatools.novartismetastore.xml;
+package it.fmach.femmetastore.xml;
 
 
-import org.isatools.novartismetastore.MetastoreClient;
-import org.isatools.novartismetastore.resource.MetastoreResult;
-import org.isatools.novartismetastore.resource.ResourceDescription;
+import it.fmach.femmetastore.MetastoreClient;
+import it.fmach.femmetastore.resource.MetastoreResult;
+import it.fmach.femmetastore.resource.ResourceDescription;
 import org.w3c.dom.NodeList;
 import uk.ac.ebi.utils.xml.XPathReader;
 

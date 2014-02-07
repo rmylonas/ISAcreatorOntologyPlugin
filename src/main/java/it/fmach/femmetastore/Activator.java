@@ -1,4 +1,4 @@
-package org.isatools.novartismetastore;
+package it.fmach.femmetastore;
 
 import org.isatools.isacreator.plugins.host.service.PluginOntologyCVSearch;
 import org.osgi.framework.BundleActivator;

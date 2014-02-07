@@ -1,4 +1,4 @@
-package org.isatools.novartismetastore;
+package it.fmach.femmetastore;
 
 import org.isatools.isacreator.configuration.RecommendedOntology;
 import org.isatools.isacreator.managers.ApplicationManager;
@@ -6,12 +6,12 @@ import org.isatools.isacreator.ontologymanager.OntologySourceRefObject;
 import org.isatools.isacreator.ontologymanager.common.OntologyTerm;
 import org.isatools.isacreator.plugins.host.service.PluginOntologyCVSearch;
 import org.isatools.isacreator.plugins.registries.OntologySearchPluginRegistry;
-import org.isatools.novartismetastore.resource.MetastoreResult;
-import org.isatools.novartismetastore.resource.ResourceDescription;
-import org.isatools.novartismetastore.resource.ResourceField;
-import org.isatools.novartismetastore.utils.Convert;
-import org.isatools.novartismetastore.xml.MetastoreXMLHandler;
-import org.isatools.novartismetastore.xml.ResourceXMLHandler;
+import it.fmach.femmetastore.resource.MetastoreResult;
+import it.fmach.femmetastore.resource.ResourceDescription;
+import it.fmach.femmetastore.resource.ResourceField;
+import it.fmach.femmetastore.utils.Convert;
+import it.fmach.femmetastore.xml.MetastoreXMLHandler;
+import it.fmach.femmetastore.xml.ResourceXMLHandler;
 import uk.ac.ebi.utils.io.DownloadUtils;
 
 import java.io.FileNotFoundException;

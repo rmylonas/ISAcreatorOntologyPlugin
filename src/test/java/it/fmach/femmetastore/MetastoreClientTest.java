@@ -1,10 +1,10 @@
-package org.isatools.novartismetastore;
+package it.fmach.femmetastore;
 
 import org.isatools.isacreator.configuration.Ontology;
 import org.isatools.isacreator.configuration.RecommendedOntology;
 import org.isatools.isacreator.ontologymanager.OntologySourceRefObject;
 import org.isatools.isacreator.ontologymanager.common.OntologyTerm;
-import org.isatools.novartismetastore.resource.ResourceDescription;
+import it.fmach.femmetastore.resource.ResourceDescription;
 import org.junit.Test;
 
 import java.util.Collections;

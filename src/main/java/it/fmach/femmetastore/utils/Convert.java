@@ -1,10 +1,10 @@
-package org.isatools.novartismetastore.utils;
+package it.fmach.femmetastore.utils;
 
 import org.isatools.isacreator.ontologymanager.OntologySourceRefObject;
 import org.isatools.isacreator.ontologymanager.common.OntologyTerm;
-import org.isatools.novartismetastore.MetastoreClient;
-import org.isatools.novartismetastore.resource.MetastoreResult;
-import org.isatools.novartismetastore.resource.ResourceDescription;
+import it.fmach.femmetastore.MetastoreClient;
+import it.fmach.femmetastore.resource.MetastoreResult;
+import it.fmach.femmetastore.resource.ResourceDescription;
 
 import java.util.ArrayList;
 import java.util.HashMap;

@@ -1,9 +1,9 @@
-package org.isatools.novartismetastore.xml;
+package it.fmach.femmetastore.xml;
 
 import org.apache.commons.collections15.MultiMap;
 import org.apache.commons.collections15.multimap.MultiHashMap;
-import org.isatools.novartismetastore.resource.ResourceDescription;
-import org.isatools.novartismetastore.resource.ResourceField;
+import it.fmach.femmetastore.resource.ResourceDescription;
+import it.fmach.femmetastore.resource.ResourceField;
 import org.w3c.dom.NodeList;
 import uk.ac.ebi.utils.xml.XPathReader;
 

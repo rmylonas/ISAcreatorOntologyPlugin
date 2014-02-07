@@ -4,20 +4,20 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>org.isatools</groupId>
-    <artifactId>NovartisMetastore</artifactId>
+    <groupId>it.fmach</groupId>
+    <artifactId>FEMMetastore</artifactId>
     <version>0.1</version>
-    <name>Plugin to search the NovartisMetastore within ISAcreator.</name>
+    <name>ISAcreator plugin which looks up ontologies in local FEM servers.</name>
     <packaging>bundle</packaging>
 
 
     <developers>
         <developer>
-            <id>maguire</id>
-            <name>Eamonn Maguire</name>
-            <email>eamonnmag@gmail.com</email>
-            <organization>ISA tools team</organization>
-            <organizationUrl>http://isa-tools.org</organizationUrl>
+            <id>mylonasr</id>
+            <name>Roman Mylonas</name>
+            <email>roman.mylonas@fmach.it</email>
+            <organization>FEM developer team</organization>
+            <organizationUrl>http://fmach.it</organizationUrl>
         </developer>
     </developers>
 
@@ -68,10 +68,10 @@
                 <configuration>
                     <instructions>
                         <Import-Package>*</Import-Package>
-                        <Export-Package>org.isatools.novartismetastore
+                        <Export-Package>it.fmach.femmetastore
                         </Export-Package>
-                        <Bundle-Activator>org.isatools.novartismetastore.Activator</Bundle-Activator>
-                        <Bundle-Vendor>ISAteam</Bundle-Vendor>
+                        <Bundle-Activator>it.fmach.femmetastore.Activator</Bundle-Activator>
+                        <Bundle-Vendor>FEMteam</Bundle-Vendor>
                     </instructions>
                 </configuration>
 

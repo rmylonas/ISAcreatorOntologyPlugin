@@ -1,4 +1,4 @@
-package org.isatools.novartismetastore.resource;
+package it.fmach.femmetastore.resource;
 
 import org.apache.commons.collections15.MultiMap;
 import org.apache.commons.collections15.multimap.MultiHashMap;
