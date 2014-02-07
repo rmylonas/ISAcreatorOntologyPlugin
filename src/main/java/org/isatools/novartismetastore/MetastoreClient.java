@@ -1,7 +1,7 @@
 package org.isatools.novartismetastore;
 
 import org.isatools.isacreator.configuration.RecommendedOntology;
-import org.isatools.isacreator.gui.ApplicationManager;
+import org.isatools.isacreator.managers.ApplicationManager;
 import org.isatools.isacreator.ontologymanager.OntologySourceRefObject;
 import org.isatools.isacreator.ontologymanager.common.OntologyTerm;
 import org.isatools.isacreator.plugins.host.service.PluginOntologyCVSearch;
@@ -48,13 +48,19 @@ public class MetastoreClient implements PluginOntologyCVSearch {
      * @return Map<OntologySourceRefObject, List<OntologyTerm>> of the source to the terms found for that source.
      */
     public Map<OntologySourceRefObject, List<OntologyTerm>> searchRepository(String term, Map<String, RecommendedOntology> recommendedOntologies, boolean searchAll) {
+        System.out.println("Search term: " + term);
+
         Map<OntologySourceRefObject, List<OntologyTerm>> results = new HashMap<OntologySourceRefObject, List<OntologyTerm>>();
         for (ResourceDescription resourceDescription : resourceInformation) {
             String fieldDetails = ApplicationManager.getCurrentlySelectedFieldName();
+
+            System.out.println("fieldDetails: " + fieldDetails);
             // only do the search if the field matches one expected by the system
             if (searchAll) {
+                System.out.println("search all");
                 results.putAll(performQuery(term, resourceDescription));
             } else {
+                System.out.println("search not all");
                 if (checkIfResourceHasField(resourceDescription, fieldDetails) || checkIfResourceIsRecommended(resourceDescription, recommendedOntologies)) {
                     System.out.println("Querying on " + resourceDescription.getResourceName() + "for " + term + " on " + fieldDetails);
                     results.putAll(performQuery(term, resourceDescription));
@@ -156,6 +162,5 @@ public class MetastoreClient implements PluginOntologyCVSearch {
     public void deregisterSearch() {
         OntologySearchPluginRegistry.deregisterPlugin(this);
     }
-
 
 }

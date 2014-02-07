@@ -25,7 +25,7 @@
 
         <repository>
             <id>oerc</id>
-            <url>http://frog.oerc.ox.ac.uk:8080/artifactory/repo/</url>
+            <url>http://frog.oerc.ox.ac.uk:8080/nexus-2.1.2/content/repositories/releases/</url>
         </repository>
 
         <repository>
@@ -115,7 +115,7 @@
         <dependency>
             <groupId>org.isatools</groupId>
             <artifactId>ISAcreator</artifactId>
-            <version>1.6.0</version>
+            <version>1.7.1</version>
         </dependency>
 
         <dependency>

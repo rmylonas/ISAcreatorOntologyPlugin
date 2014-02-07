@@ -1,0 +1,26 @@
+Manifest-Version: 1.0
+Export-Package: org.isatools.novartismetastore;uses:="org.isatools.isa
+ creator.plugins.host.service,org.osgi.framework,org.isatools.isacreat
+ or.plugins.registries,org.isatools.isacreator.configuration,org.isato
+ ols.isacreator.managers,org.isatools.isacreator.ontologymanager,uk.ac
+ .ebi.utils.io,org.isatools.isacreator.ontologymanager.common,org.apac
+ he.commons.collections15"
+Built-By: mylonasr
+Tool: Bnd-1.15.0
+Bundle-Name: Plugin to search the NovartisMetastore within ISAcreator.
+Created-By: Apache Maven Bundle Plugin
+Bundle-Vendor: ISAteam
+Build-Jdk: 1.7.0_51
+Bundle-Version: 0.1.0
+Bnd-LastModified: 1391712826288
+Bundle-ManifestVersion: 2
+Bundle-Activator: org.isatools.novartismetastore.Activator
+Import-Package: javax.xml.namespace,javax.xml.xpath,org.apache.commons
+ .collections15,org.apache.commons.collections15.multimap,org.isatools
+ .isacreator.configuration,org.isatools.isacreator.managers,org.isatoo
+ ls.isacreator.ontologymanager,org.isatools.isacreator.ontologymanager
+ .common,org.isatools.isacreator.plugins.host.service,org.isatools.isa
+ creator.plugins.registries,org.osgi.framework;version="[1.5,2)",org.w
+ 3c.dom,uk.ac.ebi.utils.io,uk.ac.ebi.utils.xml
+Bundle-SymbolicName: org.isatools.NovartisMetastore
+
