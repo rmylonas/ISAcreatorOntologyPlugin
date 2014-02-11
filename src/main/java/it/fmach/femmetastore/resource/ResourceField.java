@@ -3,7 +3,7 @@ package it.fmach.femmetastore.resource;
 /**
  * Created by the ISA team
  *
- * @author Eamonn Maguire (eamonnmag@gmail.com)
+ * @author Eamonn Maguire (eamonnmag@gmail.com), Roman Mylonas
  *         <p/>
  *         Date: 10/05/2012
  *         Time: 11:24

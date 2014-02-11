@@ -9,7 +9,7 @@ import java.util.Hashtable;
 /**
  * Created by the ISA team
  *
- * @author Eamonn Maguire (eamonnmag@gmail.com)
+ * @author Eamonn Maguire (eamonnmag@gmail.com), Roman Mylonas
  *         <p/>
  *         Date: 03/10/2011
  *         Time: 16:06

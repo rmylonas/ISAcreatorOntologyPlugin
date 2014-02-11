@@ -15,7 +15,7 @@ import java.util.List;
 
 public class ResourceXMLHandler {
 
-    public static final String resourceFileLocation = "config/resource-description.xml";
+    public static final String resourceFileLocation = "Plugins/config/resource-description.xml";
 
     public List<ResourceDescription> parseXML() {
         try {

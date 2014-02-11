@@ -1,0 +1,15 @@
+<resources>
+
+    <resource name="Fondazione Edmund Mach ontology" abbreviation="FEM" queryURL="http://fempc0125.intra.ismaa.it:8008/MetaDB/organism/search?term=$SEARCH_TERM" version="0.1">
+        <fields>
+            <field name="Characteristics[Organism]"/>
+        </fields>
+    </resource>
+
+<!--     <resource name="FEM organism part ontology" abbreviation="FEMpart" queryURL="http://localhost:8080/MetaDB/organismPart/search?term=$SEARCH_TERM" version="0.1">
+        <fields>
+            <field name="Characteristics[Organism part]"/>
+        </fields>
+    </resource> -->
+
+</resources>

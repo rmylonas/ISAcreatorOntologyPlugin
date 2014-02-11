@@ -1,0 +1,1 @@
+A ISAcreator plugin which looks up Ontologies in our servers (adapted from https://github.com/ISA-tools/NovartisMetastore)

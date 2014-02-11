@@ -6,15 +6,12 @@ import it.fmach.femmetastore.MetastoreClient;
 import it.fmach.femmetastore.resource.MetastoreResult;
 import it.fmach.femmetastore.resource.ResourceDescription;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /**
  * Created by the ISA team
  *
- * @author Eamonn Maguire (eamonnmag@gmail.com)
+ * @author Eamonn Maguire (eamonnmag@gmail.com), Roman Mylonas
  *         <p/>
  *         Date: 03/10/2011
  *         Time: 17:04
@@ -29,9 +26,17 @@ public class Convert {
 
         convertedResult.put(source, new ArrayList<OntologyTerm>());
 
+        System.out.println("Converting..");
+
         for(MetastoreResult result : metastoreResults) {
-            OntologyTerm ontologyTerm = new OntologyTerm(result.getToken(), result.getId(), null, source);
-            ontologyTerm.addToComments("Species", result.getSpecies() == null ? "" : result.getSpecies());
+            System.out.println("result: " + result.getToken() + " ,source: " + source);
+            OntologyTerm ontologyTerm = new OntologyTerm(result.getToken(), result.getId(), "", source);
+
+            //add all comments
+            for (Map.Entry<String, String> comment : result.getCommentMap().entrySet()) {
+                ontologyTerm.addToComments(comment.getKey(), comment.getValue());
+            }
+
             convertedResult.get(source).add(ontologyTerm);
         }
 

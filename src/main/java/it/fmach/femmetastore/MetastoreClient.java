@@ -20,7 +20,7 @@ import java.util.*;
 /**
  * Created by the ISA team
  *
- * @author Eamonn Maguire (eamonnmag@gmail.com)
+ * @author Eamonn Maguire (eamonnmag@gmail.com), Roman Mylonas
  *         <p/>
  *         Date: 12/09/2011
  *         Time: 16:51
@@ -55,6 +55,9 @@ public class MetastoreClient implements PluginOntologyCVSearch {
             String fieldDetails = ApplicationManager.getCurrentlySelectedFieldName();
 
             System.out.println("fieldDetails: " + fieldDetails);
+            System.out.println("resourceDescription: " + resourceDescription.getResourceName());
+            System.out.println("resourceFields: " + resourceDescription.getResourceFields());
+
             // only do the search if the field matches one expected by the system
             if (searchAll) {
                 System.out.println("search all");
@@ -82,6 +85,7 @@ public class MetastoreClient implements PluginOntologyCVSearch {
             return false;
         } else {
             String fieldName = fieldDetails.substring(fieldDetails.lastIndexOf(":>") + 2).trim();
+            System.out.println("fieldName: " + fieldName);
 
             if (resourceDescription.getResourceFields().containsKey(fieldName)) {
                 String assayMeasurement, assayTechnology = "";
@@ -119,9 +123,11 @@ public class MetastoreClient implements PluginOntologyCVSearch {
         for (ResourceDescription resourceDescription : resourceInformation) {
             String fieldDetails = ApplicationManager.getCurrentlySelectedFieldName();
             if (checkIfResourceHasField(resourceDescription, fieldDetails) || checkIfResourceIsRecommended(resourceDescription, recommendedOntologies)) {
+                System.out.println("has preferred resource for current field");
                 return true;
             }
         }
+        System.out.println("has NOT preferred resource for current field");
         return false;
     }
 

@@ -16,7 +16,7 @@ import static org.junit.Assert.assertTrue;
 /**
  * Created by the ISA team
  *
- * @author Eamonn Maguire (eamonnmag@gmail.com)
+ * @author Eamonn Maguire (eamonnmag@gmail.com), Roman Mylonas
  *         <p/>
  *         Date: 12/09/2011
  *         Time: 16:55
@@ -26,7 +26,7 @@ public class MetastoreClientTest {
     @Test
     public void getTermsByPartialNameFromSource() {
         MetastoreClient client = new MetastoreClient();
-        Map<OntologySourceRefObject, List<OntologyTerm>> result = client.searchRepository("colon cancer");
+        Map<OntologySourceRefObject, List<OntologyTerm>> result = client.searchRepository("apple");
 
         System.out.println("There are " + result.size() + " results");
         for (OntologySourceRefObject source : result.keySet()) {
@@ -43,7 +43,7 @@ public class MetastoreClientTest {
     @Test
     public void getTermsByPartialNameFromSourceWithRecommended() {
         MetastoreClient client = new MetastoreClient();
-        Map<OntologySourceRefObject, List<OntologyTerm>> result = client.searchRepository("colon cancer", Collections.singletonMap("NVMIS2", new RecommendedOntology(new Ontology("12312", "1.0", "NVMIS2", "Novartis Metastore"))), false);
+        Map<OntologySourceRefObject, List<OntologyTerm>> result = client.searchRepository("apple", Collections.singletonMap("NVMIS2", new RecommendedOntology(new Ontology("12312", "1.0", "NVMIS2", "Novartis Metastore"))), false);
 
         System.out.println("There are " + result.size() + " results");
         for (OntologySourceRefObject source : result.keySet()) {

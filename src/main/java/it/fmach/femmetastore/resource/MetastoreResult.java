@@ -1,9 +1,11 @@
 package it.fmach.femmetastore.resource;
 
+import java.util.*;
+
 /**
  * Created by the ISA team
  *
- * @author Eamonn Maguire (eamonnmag@gmail.com)
+ * @author Eamonn Maguire (eamonnmag@gmail.com), Roman Mylonas
  *         <p/>
  *         Date: 14/09/2011
  *         Time: 21:01
@@ -12,13 +14,13 @@ public class MetastoreResult {
 
     private String id;
     private String token;
-    private String species;
+    private Map<String, String> commentMap;
     private ResourceDescription parentResource;
 
-    public MetastoreResult(String id, String token, String species, ResourceDescription parentResource) {
+    public MetastoreResult(String id, String token, Map<String, String> commentMap, ResourceDescription parentResource) {
         this.id = id;
         this.token = token;
-        this.species = species;
+        this.commentMap = commentMap;
         this.parentResource = parentResource;
     }
 
@@ -38,12 +40,12 @@ public class MetastoreResult {
         this.token = token;
     }
 
-    public String getSpecies() {
-        return species;
+    public Map<String, String> getCommentMap() {
+        return commentMap;
     }
 
-    public void setSpecies(String species) {
-        this.species = species;
+    public void setCommentMap(Map<String, String> commentMap) {
+        this.commentMap = commentMap;
     }
 
     public ResourceDescription getParentResource() {
